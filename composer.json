@@ -1,5 +1,5 @@
 {
-    "name": "Pixelpub/Loco",
+    "name": "pixelpub/loco",
     "description": "Laravel package for the localise.biz api",
     "keywords": ["laravel", "localize", "Localise.biz"],
     "homepage": "",
