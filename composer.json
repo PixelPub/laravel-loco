@@ -1,0 +1,25 @@
+{
+    "name": "Pixelpub/Loco",
+    "description": "Laravel package for the localise.biz api",
+    "keywords": ["laravel", "localize", "Localise.biz"],
+    "homepage": "",
+    "authors": [
+        {
+            "name": "Stefan Probst",
+            "email": "stefan@pixel-pub.de"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "autoload": {
+       "psr-4": {
+         "Pixelpub\\Loco\\": "src/"
+        }
+    },
+    "license": "MIT"
+    
+}
