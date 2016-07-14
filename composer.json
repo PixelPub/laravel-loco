@@ -17,7 +17,7 @@
     },
     "autoload": {
        "psr-4": {
-         "Pixelpub\\Loco\\": "src/"
+         "Pixelpub\\Loco\\": "src/Loco"
         }
     },
     "license": "MIT"
