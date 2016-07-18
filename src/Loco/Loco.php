@@ -26,14 +26,12 @@ class Loco implements LocoContract
     protected $projects;
 
     /**
+     * The {index} parameter specifies whether the translations in your
+     * file are indexed by asset IDs or source texts.
+     *
      * @var string
      */
     protected $index;
-
-    /**
-     * @var string
-     */
-    protected $cache;
 
     /**
      * Available languages.
@@ -51,7 +49,6 @@ class Loco implements LocoContract
         $this->api = $config['api'];
         $this->projects = $config['projects'];
         $this->index = $config['loco_index'];
-        $this->cache = $config['cache'];
         $this->languages = $config['languages'];
     }
 
@@ -64,7 +61,7 @@ class Loco implements LocoContract
      * @param $language
      * @return mixed
      */
-    public function export($project, $language)
+    public function fetch($project, $language)
     {
         $cacheKey = $this->buildCacheKey($project, $language);
         return Cache::rememberForever($cacheKey, function () use ($project, $language) {

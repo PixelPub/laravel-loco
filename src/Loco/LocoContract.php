@@ -9,7 +9,7 @@ interface LocoContract
      * @param $language
      * @return mixed
      */
-    public function export($project, $language);
+    public function fetch($project, $language);
 
     /**
      * @param $project
